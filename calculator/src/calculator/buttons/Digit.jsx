@@ -3,7 +3,7 @@ import React from 'react';
 import './Digit.css';
 
 const Digit = (props) => {
-    const classes = `Digit ${props.state.result ? 'disabled' : ''}`;
+    const classes = `Digit ${props.state.result !== undefined ? 'disabled' : ''}`;
     return (
         <div className={classes} onClick={e => {
             e.preventDefault();

@@ -23,7 +23,7 @@ const Footer = (props) => {
         <button className={operatorClassName(op)} onClick={e => {
             e.preventDefault();
             props.dispatch({type: 'operatorSelect', payload: op})
-        }} disabled={props.state.firstOperand === undefined || props.state.result} key={op}>{op}</button>
+        }} disabled={props.state.firstOperand === undefined || props.state.result !== undefined} key={op}>{op}</button>
     ));
 
     return (
@@ -34,7 +34,7 @@ const Footer = (props) => {
             <button className="calculate-button" onClick={e => {
                 e.preventDefault();
                 props.dispatch({type: 'calculate'})
-            }} disabled={props.state.secondOperand === undefined || props.state.result}>Calculate!</button>
+            }} disabled={props.state.secondOperand === undefined || props.state.result !== undefined}>Calculate!</button>
             <button className="clear-button" onClick={e => {
                 e.preventDefault();
                 props.dispatch({type: 'clear'})
