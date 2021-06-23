@@ -1,0 +1,52 @@
+
+.footer {
+    padding: 0 35px;
+}
+
+.operators {
+    color: white;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.operators button {
+    color: white;
+    display: inline-flex;
+    margin: 20px;
+    padding: 15px 60px;
+    border: 0
+}
+
+:disabled {
+    opacity: 45%;
+}
+
+.add {
+    background-color: mediumseagreen;
+}
+
+.subtract {
+    background-color: darkred;
+}
+
+.multiply {
+    background-color: goldenrod;
+}
+
+.calculate-button {
+    color: white;
+    background-color: darkslategrey;
+    width: 100%;
+    padding: 15px;
+    border: 0
+}
+
+.clear-button {
+    color: white;
+    background-color: blueviolet;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 0
+}
