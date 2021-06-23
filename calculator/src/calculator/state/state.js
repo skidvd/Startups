@@ -45,7 +45,6 @@ export const reducer = (state, action) => {
             }
         case 'operandSet':
             // this is triggered when a numeric value has been typed or selected from the input areas
-            console.log(`operandSet [`, action.payload, ']', action.payload === undefined);
             const newValue = parseInt(action.payload, 10);
             return {
                 ...state,
