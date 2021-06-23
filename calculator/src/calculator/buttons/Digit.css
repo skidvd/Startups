@@ -1,0 +1,15 @@
+
+.Digit {
+    background-color: tomato;
+    color: white;
+    margin: 20px;
+    padding: 15px 60px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.disabled {
+    opacity: 45%;
+}
+
