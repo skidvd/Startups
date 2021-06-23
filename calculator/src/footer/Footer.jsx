@@ -23,7 +23,7 @@ const Footer = (props) => {
         <button className={operatorClassName(op)} onClick={e => {
             e.preventDefault();
             props.dispatch({type: 'operatorSelect', payload: op})
-        }} disabled={props.state.firstOperand === undefined || props.state.result}>{op}</button>
+        }} disabled={props.state.firstOperand === undefined || props.state.result} key={op}>{op}</button>
     ));
 
     return (
