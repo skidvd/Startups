@@ -18,7 +18,6 @@ function App() {
         <Calculator state={state} dispatch={dispatch}></Calculator>
         <hr/>
         <Footer state={state} dispatch={dispatch}></Footer>
-        <div>{JSON.stringify(state, undefined, '\t')}</div>
     </div>
   );
 }
